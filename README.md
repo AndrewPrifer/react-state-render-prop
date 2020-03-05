@@ -1,5 +1,7 @@
 # React State Render Prop
 
+A component for introducing state through render props. Especially useful for controlling arrays of controlled components. Written in TypeScript.
+
 ## Installation
 
 ```sh
