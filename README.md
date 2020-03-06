@@ -16,10 +16,18 @@ npm i react-state-render-prop
 
 ## Usage
 
-```ts
-<State initialState={0}>
-  {(state, setState) => (
-    <button onClick={() => setState(state => state + 1)}>{state}</button>
-  )}
-</State>
+```tsx
+import { State } from '../';
+
+const App = () => {
+  return (
+    <div>
+      <State initialState={0}>
+        {(state, setState) => (
+          <button onClick={() => setState(state => state + 1)}>{state}</button>
+        )}
+      </State>
+    </div>
+  );
+};
 ```

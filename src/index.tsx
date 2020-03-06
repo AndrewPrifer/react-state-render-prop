@@ -3,7 +3,10 @@ import * as React from 'react';
 /**
  * A component for introducing state through render props. Especially useful for controlling arrays of controlled components.
  */
-const State = <Value,>({ initialState, children }: StateProps<Value>) => {
+export const State = <Value,>({
+  initialState,
+  children,
+}: StateProps<Value>) => {
   const [value, setValue] = React.useState<Value>(initialState);
   return <>{children(value, setValue)}</>;
 };
@@ -24,5 +27,3 @@ export interface StateProps<Value> {
     setState: React.Dispatch<React.SetStateAction<Value>>
   ): React.ReactNode;
 }
-
-export default State;
