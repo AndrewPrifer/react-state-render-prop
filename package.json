@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "A component for introducing state through render props. Especially useful for controlling arrays of controlled components. Written in TypeScript.",
   "repository": "AndrewPrifer/react-state-render-prop",
