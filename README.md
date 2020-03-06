@@ -17,9 +17,9 @@ npm i react-state-render-prop
 ## Usage
 
 ```tsx
-import { State } from '../';
+import { State } from 'react-state-render-prop';
 
-const App = () => {
+const Example = () => {
   return (
     <div>
       <State initialState={0}>
